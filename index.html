@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Restaurante Bar El KFE | Villa Rica Cauca</title>
+<meta name="description" content="Alitas, costillas, hamburguesas y más en El KFE. Pide por WhatsApp.">
+
+<link rel="icon" href="logo.png">
+
+<style>
+
+/* FONDO GENERAL */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #1a1a1a, #0d0d0d);
+  color: #f5f5f5;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #ff7a18, #ffb347);
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0 0 25px rgba(255, 140, 0, 0.6);
+}
+
+/* LOGO NEÓN */
+header img {
+  width: 260px;
+  border-radius: 20px;
+  box-shadow: 
+    0 0 10px #ff7a18,
+    0 0 20px #ff7a18,
+    0 0 40px #ffb347,
+    0 0 60px #ffb347;
+  animation: neonPulse 2s infinite;
+}
+
+@keyframes neonPulse {
+  0% {box-shadow: 0 0 10px #ff7a18;}
+  50% {box-shadow: 0 0 40px #ffb347;}
+  100% {box-shadow: 0 0 10px #ff7a18;}
+}
+
+/* NAV */
+nav {
+  background: rgba(20,20,20,0.9);
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #ff9c36;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SECCIONES */
+section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #ffb347;
+}
+
+/* 🔥 REDES HORIZONTALES */
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.redes a {
+  color: #ffb347;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.redes a:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #ff7a18;
+}
+
+.redes img {
+  width: 30px;
+}
+
+/* GRID */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.price {
+  color: #ff7a18;
+  font-weight: bold;
+}
+
+/* BOTÓN */
+.btn {
+  display: inline-block;
+  margin-top: 12px;
+  background: #25d366;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+/* IFRAME */
+iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png">
+  <h1>🔥 RESTAURANTE-BAR El KFE</h1>
+  <p>📍 Villa Rica, Cauca - Cerca del parque principal</p>
+</header>
+
+<nav>
+  <a href="#productos">Productos</a>
+  <a href="#menu">Menú</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#ubicacion">Ubicación</a>
+</nav>
+
+<!-- 🔥 REDES PRIMERO -->
+<section>
+  <h2>📲 Síguenos en Redes</h2>
+
+  <div class="redes">
+    <a href="https://facebook.com" target="_blank">
+      <img src="logo_facebook.png"> Facebook
+    </a>
+
+    <a href="https://www.instagram.com/el_kfe_restaurante?igsh=MnpqNm9waDg1NWM0" target="_blank">
+      <img src="logo_instagram.png"> Restaurante Bar el Kfe
+    </a>
+
+    <a href="https://tiktok.com" target="_blank">
+      <img src="logo_tiktok.png"> TikTok
+    </a>
+
+    <a href="https://wa.me/573183527073" target="_blank">
+      <img src="logo_whastapp.jpg"> 3183527073
+    </a>
+  </div>
+</section>
+
+<section id="productos">
+  <h2>🔥 Productos Destacados</h2>
+
+  <div class="product-grid">
+
+    <div class="card">
+      <img src="alas_.png">
+      <h3>Alitas x6</h3>
+      <p>6 Alitas con tu salsa favorita ( BBQ, MM o BBQ PICANTE) + papas tipo francesa.</p>
+      <p class="price">$17.000</p>
+    </div>
+
+    <div class="card">
+      <img src="alas_12.png">
+      <h3>Alitas x12</h3>
+      <p>12 Alitas tu salsa favorita ( BBQ, MM o BBQ PICANTE) + papas tipo francesa 🔥</p>
+      <p class="price">$25.000</p>
+    </div>
+
+    <div class="card">
+      <img src="supercombomix.png">
+      <h3>Super Combo Mix</h3>
+      <p>Combo de 20 Alas y 600 gr de Costillas jugosas + papas a la francesa y salsa de la casa.</p>
+      <p class="price">$68.000</p>
+    </div>
+
+    <div class="card">
+      <img src="hamburguesa_kfe.png">
+      <h3>Hamburguesa El KFE</h3>
+      <p>Hamburguesa artesanal con pechuga, queso y vegetales frescos</p>
+      <p class="price">$16.000</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="menu">
+  <h2>📋 Menú</h2>
+  <iframe src="https://drive.google.com/file/d/1Gn7Snnl0x777gU2b9wC8Jgr9U99NFxdg/preview" height="600"></iframe>
+</section>
+
+<section id="nosotros">
+  <h2>👨‍🍳 Sobre Nosotros</h2>
+  <p style="text-align:center;">
+    En El KFE ofrecemos comida deliciosa, ambiente agradable y la mejor atención.
+  </p>
+</section>
+
+<section id="ubicacion">
+  <h2>📍 Ubicación</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d320.35531095877684!2d-76.46122414784458!3d3.1739496041490187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e302399125d6cc5%3A0x8adddc335cafd913!2zRWwga2bDqQ!5e0!3m2!1ses-419!2sco!4v1774386438075!5m2!1ses-419!2sco" height="400"></iframe>
+</section>
+
+<footer>
+  <p>© 2026 Restaurante Bar El KFE</p>
+</footer>
+
+<a href="https://wa.me/573183527073" class="whatsapp-float">💬</a>
+
+</body>
+</html>
